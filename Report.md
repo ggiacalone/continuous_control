@@ -16,32 +16,32 @@ The Critic is a simple neural network with the same architecture, only it output
 
 ### Hyper parameters
 
-I started out with the default parameters in the starter code:
-BUFFER_SIZE = int(1e5) # replay buffer size
-BATCH_SIZE = 128 # minibatch size
-GAMMA = 0.99 # discount factor
-TAU = 1e-3 # for soft update of target parameters
-LR_ACTOR = 1e-4 # learning rate
-LR_CRITIC = 1e-3
-WEIGHT_DECAY = 0
-
-UPDATE_EVERY = 4 # how often to update the network
-
+I started out with the default parameters in the starter code:  
+BUFFER_SIZE = int(1e5) # replay buffer size  
+BATCH_SIZE = 128 # minibatch size  
+GAMMA = 0.99 # discount factor  
+TAU = 1e-3 # for soft update of target parameters  
+LR_ACTOR = 1e-4 # learning rate  
+LR_CRITIC = 1e-3  
+WEIGHT_DECAY = 0  
+  
+UPDATE_EVERY = 4 # how often to update the network  
+  
 ### Submission parameters:
 
-The best result was acheived using the following hyperparameters:
-
-BUFFER_SIZE = int(1e6)  # replay buffer size
-BATCH_SIZE = 256
-GAMMA = 0.99            # discount factor
-TAU = 1e-3              # for soft update of target parameters
-LR_ACTOR = 1e-4         # learning rate of the actor 
-LR_CRITIC = 1e-4        # learning rate of the critic
-WEIGHT_DECAY = 0.001
-
-UPDATE_EVERY = 4        # how often to update the network
-
-You can look at `Explore.ipynb` for a list of the experiments I tried, changing hyperparameter's in code files between different runs just trying to replicate the baseline results in the 'where to start' project section. I was unable to get the average reward above 5 for many experiments and was stuck for a long time until I finally tried setting the Actor and Critic learning rates to both be 1e-4. This finally lead to meaningful increase and average reward, at which point I ran the environment finally against enough episodes to pass the environment.
+The best result was acheived using the following hyperparameters:  
+  
+BUFFER_SIZE = int(1e6)  # replay buffer size  
+BATCH_SIZE = 256  
+GAMMA = 0.99            # discount factor  
+TAU = 1e-3              # for soft update of target parameters  
+LR_ACTOR = 1e-4         # learning rate of the actor   
+LR_CRITIC = 1e-4        # learning rate of the critic  
+WEIGHT_DECAY = 0.001  
+  
+UPDATE_EVERY = 4        # how often to update the network  
+  
+You can look at `Explore.ipynb` for a list of the experiments I tried, changing hyperparameter's in code files between different runs just trying to replicate the baseline results in the 'where to start' project section. I was unable to get the average reward above 5 for many experiments and was stuck for a long time until I finally tried setting the Actor and Critic learning rates to both be 1e-4. This finally lead to meaningful increase and average reward, at which point I ran the environment finally against enough episodes to pass the environment.  
 
 You can see a plot of rewards for my final submission in the last code cell of `Explore.ipynb`.
 
