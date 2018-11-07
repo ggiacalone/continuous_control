@@ -2,7 +2,9 @@
 
 ### Learning Algorithm
 
-This is an implementation of the DDQN algorithm whose respective paper is referenced in the README.md file. I used the code from the ddqn-pendulumn project as a starting point, which is located here: https://github.com/udacity/deep-reinforcement-learning/tree/master/ddqn-pendulum.
+This is an implementation of the DDPG algorithm whose respective paper is referenced in the README.md file. I used the code from the ddqn-pendulumn project as a starting point, which is located here: https://github.com/udacity/deep-reinforcement-learning/tree/master/ddqn-pendulum.
+
+DDPG, is a model-free, off-policy actor-critic algorithm that uses deep neural networks as function approximinators to both  learn an action policy (the actor), and to evaluate the expected reward of that action policy (the critic).
 
 I modified the code to work with the Reacher environment, and began testing different model aritechture's and hyperparameters.
 
